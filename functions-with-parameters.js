@@ -16,8 +16,11 @@ console.log(result);
 // ---- Verwachte uitkomsten:
 // greeter("Jan") geeft "Hoi Jan!"
 // greeter("Kees") geeft "Hoi Kees!"
-
-
+function greeter(name) {
+  return `Hoi is ${name}!`;
+}
+console.log(greeter("kees"));
+console.log(greeter("Jose"));
 
 /* Opdracht 2 */
 // Schrijf een functie genaamd minutesToSeconds, die een hoeveelheid minuten verwacht (als een getal) en teruggeeft hoeveel seconden dat zijn.
@@ -25,7 +28,12 @@ console.log(result);
 // minutesToSeconds(1) geeft 60
 // minutesToSeconds(3) geeft 180
 // minutesToSeconds(23) geeft 1380
-
+function minutesToSeconds(minute) {
+  return minute * 60;
+}
+console.log(minutesToSeconds(1));
+console.log(minutesToSeconds(3));
+console.log(minutesToSeconds(23));
 
 
 /* Opdracht 3 */
@@ -34,7 +42,11 @@ console.log(result);
 // ---- Verwachte uitkomsten:
 // merge("abra", "cadabra") geeft "abracadabra"
 // merge("zoet", "sappig") geeft "zoetsappig"
-
+function merge(text1, text2) {
+  return text1 + text2;
+}
+console.log(merge("abra", "cadabra"));
+console.log(merge("zoet", "sappig"));
 
 
 
@@ -43,7 +55,12 @@ console.log(result);
 // ---- Verwachte uitkomsten:
 // calculateDogYears(6) geeft "Jouw hond is 42 jaar oud in mensenjaren."
 // calculateDogYears(2) geeft "Jouw hond is 14 jaar oud in mensenjaren."
-
+function calculateDogYear(year) {
+  const dogYear = year * 7;
+  return  `Jouw hond is ${dogYear} jaar our in mensenjaren`;
+}
+console.log(calculateDogYear(6));
+console.log(calculateDogYear(2));
 
 
 /* Opdracht 5 */
@@ -53,7 +70,12 @@ console.log(result);
 // wrapper("bril", "*") geeft "*bril*"
 // wrapper("beep", "_") geeft "_beep_"
 // wrapper("kaas", "Q") geeft "QkaasQ"
-
+function wrapper(woord, character) {
+  return character + woord + character;
+}
+console.log(wrapper("bril","*"));
+console.log(wrapper("beep","_"));
+console.log(wrapper("kaas","Q"));
 
 
 /* Bonus opdracht  */
