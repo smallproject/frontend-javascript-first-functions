@@ -83,13 +83,10 @@ console.log(wrapper("kaas","Q"));
 // ---- Verwachte uitkomsten:
 // createDetailString({ firstName: 'Jan', lastName: 'Jansen', profession: 'docent'}) geeft "Het beroep vam Jan Jansen is docent."
 // createDetailString({ firstName: 'Kees', lastName: 'Klaasen', profession: 'brandweerman'}) geeft "Het beroep vam Kees Klaasen is brandweerman."
-// createDetailString(obj.firstName, object.lastName); {
-//   return `Het beroep van ${obj.firstName}`;
 function createDetailString(param) {
   return `Het beroep van ${param.firstName} ${param.lastName} is ${param.profession}`;
 }
 
-// }
 const text = createDetailString({ firstName: "John", lastName: "Doe", profession: 'docent' });
 console.log(text);
 
